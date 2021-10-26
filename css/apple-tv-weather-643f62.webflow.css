@@ -1,0 +1,106 @@
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e7eaf2), to(#d4d0c7));
+  background-image: linear-gradient(180deg, #e7eaf2, #d4d0c7);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.tab {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0752ee), to(#1ad5fd));
+  background-image: linear-gradient(180deg, #0752ee, #1ad5fd);
+  box-shadow: 0 60px 50px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.sun {
+  height: 110px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+
+.cloud {
+  position: absolute;
+  height: 170px;
+  margin-left: 10px;
+  opacity: 0.9;
+}
+
+.logo {
+  height: 50px;
+}
+
+.link-block {
+  position: absolute;
+  top: 15%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.link-block:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
